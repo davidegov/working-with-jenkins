@@ -1,0 +1,8 @@
+node{
+    stage("checkout"){
+        git "https://github.com/davidegov/working-with-jenkins.git"
+    }
+    stage("run HW-6.py"){
+        bat "python3.7 HW-6.py"
+    }
+}
